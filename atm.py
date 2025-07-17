@@ -12,15 +12,15 @@ while True:
      if num == '4':
           break
 
-     if num == '1':
-          pass
+     if num == '1': # 입금 기능 -> feat/deposit
+          deposit_amount = int(input('입금할 금액을 입력해주세요: '))
+          balance  += deposit_amount 
+          print(f'입금하신 금액{deposit_amount}원이고, 현재 잔액은{balance}원 입니다.')
 
      if num == '2':
           pass
-     
+
      if num == '3':
           pass
-
-
 
 print(f'서비스를 종료합니다. 현재 잔액은 {balance} 남았습니다.')
